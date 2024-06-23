@@ -1,0 +1,25 @@
+/* ローディング中の要素に適用されるスタイル */
+  .is-loading {
+  /* 背景にグラデーションを設定 */
+    background: linear-gradient(90deg, #e0e0e0 0%, #cecece 33%, #e0e0e0 66%, #cecece 100%);
+  /* 背景のサイズを設定 */
+    background-size: 300% 300%;
+  /* グラデーションのアニメーションを設定 */
+    animation: GradietionAnimation 1s linear infinite;
+  /* 要素の高さを設定 */
+    height: 150px;
+  }  
+  /* ローディング中のリストアイテムに適用されるスタイル */
+    .top__block--list li.is-loading {
+  /* 背景にグラデーションを設定 */
+    background: linear-gradient(90deg, #e0e0e0 0%, #cecece 33%, #e0e0e0 66%, #cecece 100%);
+  /* 背景のサイズを設定 */
+    background-size: 300% 300%;
+  /* 要素の高さを設定 */
+    height: 200px;
+  }
+/* グラデーションのアニメーションを定義 */
+  @keyframes GradietionAnimation {
+    0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+  }
