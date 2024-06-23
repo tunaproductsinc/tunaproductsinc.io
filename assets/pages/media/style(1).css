@@ -1,0 +1,108 @@
+/*
+Theme Name:PORIPU tears for SANGO
+Template:sango-theme
+Theme Name:sango-theme-poripu
+Theme URI:https://oldno07.com/poripu/
+Author: マサオカ
+Author URI:https://oldno07.com/
+Description: SANGOの子テーマです。SANGO親テーマをインストールした状態で、本子テーマを適用してください。使い方は<a href="https://oldno07.com/poripu/">デモサイト</a>を御覧ください。
+Version:1.28
+/*--------------------------------------
+ここから下にCSSを追加してください
+--------------------------------------*/
+/*--------------------------------------
+  見出しh2
+--------------------------------------*/
+.entry-content h2{
+
+}
+.fa5 .entry-content h2:before {/*fontawesome5を使う場合*/
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+/*--------------------------------------
+  見出しh3
+--------------------------------------*/
+.entry-content h3 {
+
+}
+.fa5 .entry-content h3:before {/*fontawesome5を使う場合*/
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+/*--------------------------------------
+  見出しh4
+--------------------------------------*/
+.entry-content h4 {
+
+}
+.fa5 .entry-content h4:before {/*fontawesome5を使う場合*/
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+
+
+/*--------------------------------------------------------------
+# fix-bnr
+--------------------------------------------------------------*/
+
+.fix-bnr {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background: url(https://corder.co.jp/media/wp-content/uploads/sites/2/2022/10/corder-blog-01.png) bottom center / cover no-repeat;
+    width: 100%;
+    height: 65px;
+    z-index: 100;
+}
+
+.fix-bnr a {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.fix-bnr a img {
+    width: 500px;
+}
+
+.fix-bnr a.close {
+    width: 40px;
+    top: -12px;
+    left: 10px;
+    padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    .fix-bnr a img {
+        width: 60%;
+        margin: 0 auto 3px;
+    }
+    .fix-bnr a.close {
+        width: 50px;
+        top: -30px;
+        left: -7px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .fix-bnr {
+        height: 55px;
+        z-index: 100;
+        bottom: -1px;
+    }
+    .fix-bnr a img {
+        width: 95%;
+        margin: 0 auto 3px;
+    }
+    .fix-bnr a.close {
+        width: 50px;
+        top: -30px;
+        left: -7px;
+        padding: 0;
+    }
+}
